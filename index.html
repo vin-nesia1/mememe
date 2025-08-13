@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 AI Meme Generator - Bikin Meme Viral Dalam Detik!</title>
+    <meta name="description" content="Generator meme AI terpanas! Bikin meme viral hanya dalam hitungan detik. Gratis, mudah, dan dijamin ngakak!">
+    
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="🔥 AI Meme Generator - Bikin Meme Viral!">
+    <meta property="og:description" content="Generator meme AI terpanas! Bikin meme viral dalam detik!">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/ff6b6b/white?text=AI+MEME+GENERATOR">
+    <meta property="og:url" content="https://aimemegenerator.com">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            animation: slideDown 0.8s ease-out;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d, #6bcf7e, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow 3s ease-in-out infinite;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #f0f0f0;
+            margin-bottom: 20px;
+        }
+
+        .viral-counter {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 15px;
+            display: inline-block;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .viral-counter span {
+            color: #ffd93d;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .generator-section, .preview-section {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .generator-section h2, .preview-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .input-group input, .input-group select, .input-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .input-group input:focus, .input-group select:focus, .input-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .template-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .template-option {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            overflow: hidden;
+            aspect-ratio: 1;
+        }
+
+        .template-option:hover {
+            border-color: #667eea;
+            transform: scale(1.05);
+        }
+
+        .template-option.selected {
+            border-color: #ff6b6b;
+            box-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
+        }
+
+        .template-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .btn-generate {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-generate:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+        }
+
+        .meme-preview {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ddd;
+            position: relative;
+        }
+
+        .meme-placeholder {
+            color: #888;
+            font-size: 1.1rem;
+        }
+
+        .generated-meme {
+            position: relative;
+            max-width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .meme-canvas {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .meme-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .meme-text {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            font-family: 'Arial Black', Arial, sans-serif;
+            font-weight: 900;
+            font-size: clamp(16px, 4vw, 28px);
+            color: white;
+            text-shadow: 2px 2px 4px black, -2px -2px 4px black, 2px -2px 4px black, -2px 2px 4px black;
+            text-transform: uppercase;
+            line-height: 1.1;
+            padding: 0 10px;
+        }
+
+        .meme-text.top {
+            top: 10px;
+        }
+
+        .meme-text.bottom {
+            bottom: 10px;
+        }
+
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffd93d;
+            display: block;
+        }
+
+        .stat-label {
+            color: #f0f0f0;
+            margin-top: 5px;
+        }
+
+        .social-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .social-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-share { background: #1da1f2; }
+        .btn-instagram { background: #e4405f; }
+        .btn-whatsapp { background: #25d366; }
+        .btn-download { background: #28a745; }
+
+        .trending-section {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            animation: slideUp 1s ease-out;
+        }
+
+        .trending-memes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .trending-item {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .trending-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .trending-preview {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .trending-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            color: #f0f0f0;
+            padding: 30px;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes rainbow {
+            0%, 100% { filter: hue-rotate(0deg); }
+            50% { filter: hue-rotate(180deg); }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 2.5rem; }
+            .main-content { grid-template-columns: 1fr; }
+            .container { padding: 10px; }
+            .template-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🔥 AI MEME GENERATOR 🔥</h1>
+            <p>Bikin Meme Viral Dalam Hitungan Detik! Dijamin Ngakak! 😂</p>
+            <div class="viral-counter">
+                🚀 <span id="meme-count">127,492</span> meme sudah dibuat hari ini!
+            </div>
+        </header>
+
+        <section class="stats-section">
+            <div class="stat-card">
+                <span class="stat-number" id="total-memes">2.3M+</span>
+                <div class="stat-label">Total Memes</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="viral-today">15K+</span>
+                <div class="stat-label">Viral Hari Ini</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number" id="users-online">892</span>
+                <div class="stat-label">Users Online</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">⭐⭐⭐⭐⭐</span>
+                <div class="stat-label">Rating Pengguna</div>
+            </div>
+        </section>
+
+        <main class="main-content">
+            <section class="generator-section">
+                <h2>🎨 Buat Meme Kamu</h2>
+                
+                <div class="input-group">
+                    <label>Pilih Template Meme:</label>
+                    <div class="template-grid">
+                        <div class="template-option selected" data-template="drake" onclick="selectTemplate(this, 'drake')">
+                            <img src="https://imgflip.com/s/meme/Drake-Helping.jpg" alt="Drake" class="template-img">
+                        </div>
+                        <div class="template-option" data-template="distracted" onclick="selectTemplate(this, 'distracted')">
+                            <img src="https://imgflip.com/s/meme/Distracted-Boyfriend.jpg" alt="Distracted Boyfriend" class="template-img">
+                        </div>
+                        <div class="template-option" data-template="woman-cat" onclick="selectTemplate(this, 'woman-cat')">
+                            <img src="https://imgflip.com/s/meme/Woman-Yelling-At-Cat.jpg" alt="Woman Cat" class="template-img">
+                        </div>
+                        <div class="template-option" data-template="expanding-brain" onclick="selectTemplate(this, 'expanding-brain')">
+                            <img src="https://imgflip.com/s/meme/Expanding-Brain.jpg" alt="Expanding Brain" class="template-img">
+                        </div>
+                        <div class="template-option" data-template="change-my-mind" onclick="selectTemplate(this, 'change-my-mind')">
+                            <img src="https://imgflip.com/s/meme/Change-My-Mind.jpg" alt="Change My Mind" class="template-img">
+                        </div>
+                        <div class="template-option" data-template="this-is-fine" onclick="selectTemplate(this, 'this-is-fine')">
+                            <img src="https://imgflip.com/s/meme/This-Is-Fine.jpg" alt="This is Fine" class="template-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="top-text">Text Atas:</label>
+                    <input type="text" id="top-text" placeholder="Masukkan text atas..." maxlength="80">
+                </div>
+
+                <div class="input-group">
+                    <label for="bottom-text">Text Bawah:</label>
+                    <input type="text" id="bottom-text" placeholder="Masukkan text bawah..." maxlength="80">
+                </div>
+
+                <div class="input-group">
+                    <label for="mood">Mood Meme:</label>
+                    <select id="mood">
+                        <option value="funny">😂 Lucu</option>
+                        <option value="sarcastic">😏 Sarkastik</option>
+                        <option value="relatable">😭 Relatable</option>
+                        <option value="savage">🔥 Savage</option>
+                        <option value="wholesome">🥰 Wholesome</option>
+                    </select>
+                </div>
+
+                <button class="btn-generate" onclick="generateMeme()">
+                    ✨ GENERATE MEME VIRAL! ✨
+                </button>
+            </section>
+
+            <section class="preview-section">
+                <h2>👀 Preview Meme</h2>
+                <div class="meme-preview" id="meme-preview">
+                    <div class="meme-placeholder">
+                        Meme kamu akan muncul di sini! 🎭<br>
+                        Pilih template dan tulis text, lalu klik Generate! 🚀
+                    </div>
+                </div>
+                
+                <div class="social-buttons" id="social-buttons" style="display: none;">
+                    <button class="social-btn btn-download" onclick="downloadMeme()">📥 Download</button>
+                    <button class="social-btn btn-share" onclick="shareToTwitter()">📱 Twitter</button>
+                    <button class="social-btn btn-instagram" onclick="shareToInstagram()">📸 Instagram</button>
+                    <button class="social-btn btn-whatsapp" onclick="shareToWhatsApp()">💬 WhatsApp</button>
+                </div>
+            </section>
+        </main>
+
+        <section class="trending-section">
+            <h2>🔥 Trending Memes Hari Ini</h2>
+            <div class="trending-memes">
+                <div class="trending-item" onclick="useTrendingMeme('When deadline besok', 'Tapi masih rebahan', 'drake')">
+                    <div class="trending-preview">
+                        <img src="https://imgflip.com/s/meme/Drake-Helping.jpg" alt="Trending 1" class="trending-img">
+                    </div>
+                    <div><strong>When deadline besok / Tapi masih rebahan</strong></div>
+                    <small>👍 12.5K likes • 🔥 Drake Template</small>
+                </div>
+                <div class="trending-item" onclick="useTrendingMeme('Gaji baru masuk', 'Langsung habis buat makan', 'distracted')">
+                    <div class="trending-preview">
+                        <img src="https://imgflip.com/s/meme/Distracted-Boyfriend.jpg" alt="Trending 2" class="trending-img">
+                    </div>
+                    <div><strong>Gaji baru masuk / Langsung habis buat makan</strong></div>
+                    <small>👍 8.7K likes • 🔥 Distracted BF</small>
+                </div>
+                <div class="trending-item" onclick="useTrendingMeme('Me: I will study tonight', 'Also me: Opens Netflix', 'woman-cat')">
+                    <div class="trending-preview">
+                        <img src="https://imgflip.com/s/meme/Woman-Yelling-At-Cat.jpg" alt="Trending 3" class="trending-img">
+                    </div>
+                    <div><strong>Study tonight / Opens Netflix instead</strong></div>
+                    <small>👍 15.2K likes • 🔥 Woman Cat</small>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 AI Meme Generator - Made with 💖 for Viral Content</p>
+        <p>🔥 Sudah viral? Tag kita di sosmed! #AIMemeGenerator 🔥</p>
+    </footer>
+
+    <script>
+        let selectedTemplate = 'drake';
+        let memeCount = 127492;
+        let totalMemes = 2300000;
+        let viralToday = 15000;
+        let usersOnline = 892;
+
+        const memeTemplates = {
+            'drake': {
+                url: 'https://imgflip.com/s/meme/Drake-Helping.jpg',
+                name: 'Drake Pointing'
+            },
+            'distracted': {
+                url: 'https://imgflip.com/s/meme/Distracted-Boyfriend.jpg',
+                name: 'Distracted Boyfriend'
+            },
+            'woman-cat': {
+                url: 'https://imgflip.com/s/meme/Woman-Yelling-At-Cat.jpg',
+                name: 'Woman Yelling at Cat'
+            },
+            'expanding-brain': {
+                url: 'https://imgflip.com/s/meme/Expanding-Brain.jpg',
+                name: 'Expanding Brain'
+            },
+            'change-my-mind': {
+                url: 'https://imgflip.com/s/meme/Change-My-Mind.jpg',
+                name: 'Change My Mind'
+            },
+            'this-is-fine': {
+                url: 'https://imgflip.com/s/meme/This-Is-Fine.jpg',
+                name: 'This is Fine'
+            }
+        };
+
+        function selectTemplate(element, template) {
+            // Remove selected class from all templates
+            document.querySelectorAll('.template-option').forEach(t => t.classList.remove('selected'));
+            // Add selected class to clicked template
+            element.classList.add('selected');
+            selectedTemplate = template;
+        }
+
+        function updateCounters() {
+            memeCount += Math.floor(Math.random() * 10) + 1;
+            usersOnline += Math.floor(Math.random() * 5) - 2;
+            if (usersOnline < 800) usersOnline = 800 + Math.floor(Math.random() * 100);
+            
+            document.getElementById('meme-count').textContent = memeCount.toLocaleString();
+            document.getElementById('users-online').textContent = usersOnline.toLocaleString();
+        }
+
+        setInterval(updateCounters, 3000);
+
+        function generateMeme() {
+            const topText = document.getElementById('top-text').value || '';
+            const bottomText = document.getElementById('bottom-text').value || '';
+            const template = memeTemplates[selectedTemplate];
+            
+            if (!topText && !bottomText) {
+                alert('Masukkan text atas atau bawah dulu bro! 😅');
+                return;
+            }
+            
+            const memePreview = document.getElementById('meme-preview');
+            memePreview.innerHTML = `
+                <div class="generated-meme">
+                    <div class="meme-canvas">
+                        <img src="${template.url}" alt="${template.name}" class="meme-image" crossorigin="anonymous">
+                        ${topText ? `<div class="meme-text top">${topText}</div>` : ''}
+                        ${bottomText ? `<div class="meme-text bottom">${bottomText}</div>` : ''}
+                    </div>
+                    <div style="margin-top: 15px; color: #666; font-size: 0.9rem;">
+                        Template: ${template.name}
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('social-buttons').style.display = 'flex';
+            
+            // Animate generation
+            memePreview.style.animation = 'slideUp 0.5s ease-out';
+            
+            // Update counter
+            memeCount++;
+            document.getElementById('meme-count').textContent = memeCount.toLocaleString();
+        }
+
+        function useTrendingMeme(topText, bottomText, template) {
+            document.getElementById('top-text').value = topText;
+            document.getElementById('bottom-text').value = bottomText;
+            
+            // Select the template
+            document.querySelectorAll('.template-option').forEach(t => t.classList.remove('selected'));
+            document.querySelector(`[data-template="${template}"]`).classList.add('selected');
+            selectedTemplate = template;
+            
+            generateMeme();
+            
+            // Scroll to preview
+            document.getElementById('meme-preview').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function downloadMeme() {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const memeImg = document.querySelector('.generated-meme .meme-image');
+            
+            if (!memeImg) {
+                alert('Generate meme dulu sebelum download! 😊');
+                return;
+            }
+
+            const img = new Image();
+            img.crossOrigin = 'anonymous';
+            img.onload = function() {
+                canvas.width = img.width;
+                canvas.height = img.height;
+                
+                // Draw image
+                ctx.drawImage(img, 0, 0);
+                
+                // Set text style
+                ctx.fillStyle = 'white';
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 3;
+                ctx.textAlign = 'center';
+                ctx.font = 'bold 40px Arial';
+                
+                // Draw top text
+                const topText = document.getElementById('top-text').value;
+                if (topText) {
+                    ctx.strokeText(topText.toUpperCase(), canvas.width/2, 60);
+                    ctx.fillText(topText.toUpperCase(), canvas.width/2, 60);
+                }
+                
+                // Draw bottom text
+                const bottomText = document.getElementById('bottom-text').value;
+                if (bottomText) {
+                    ctx.strokeText(bottomText.toUpperCase(), canvas.width/2, canvas.height - 20);
+                    ctx.fillText(bottomText.toUpperCase(), canvas.width/2, canvas.height - 20);
+                }
+                
+                // Download
+                const link = document.createElement('a');
+                link.download = `meme-${Date.now()}.png`;
+                link.href = canvas.toDataURL();
+                link.click();
+            };
+            img.src = memeImg.src;
+        }
+
+        function shareToTwitter() {
+            const topText = document.getElementById('top-text').value;
+            const bottomText = document.getElementById('bottom-text').value;
+            const text = `Baru bikin meme viral: "${topText} / ${bottomText}" pake AI Meme Generator! 🔥 Coba juga di`;
+            window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        function shareToInstagram() {
+            alert('📸 Download meme-nya dulu, terus post ke Instagram! Jangan lupa tag #AIMemeGenerator biar viral! 🔥');
+        }
+
+        function shareToWhatsApp() {
+            const text = "Coba deh AI Meme Generator ini! Bisa bikin meme profesional dalam detik! Template-nya keren semua 🚀";
+            window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        // Add dynamic effects
+        document.addEventListener('DOMContentLoaded', function() {
+            setInterval(() => {
+                const viralTodayEl = document.getElementById('viral-today');
+                viralToday += Math.floor(Math.random() * 100);
+                viralTodayEl.textContent = (viralToday/1000).toFixed(1) + 'K+';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
