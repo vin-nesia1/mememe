@@ -3,665 +3,1763 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🔥 AI Meme Generator - Bikin Meme Viral Dalam Detik!</title>
-    <meta name="description" content="Generator meme AI terpanas! Bikin meme viral hanya dalam hitungan detik. Gratis, mudah, dan dijamin ngakak!">
+    <title>WebCraftID - Marketplace Template Website Premium Indonesia</title>
+    <meta name="description" content="Marketplace template website premium terlengkap di Indonesia. Dari statis hingga dinamis dengan hosting dan domain. Solusi terpercaya untuk bisnis digital Anda.">
+    <meta name="keywords" content="template website indonesia, marketplace template, website premium, jual template, hosting murah, domain indonesia">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://market.vinnesia.my.id">
     
-    <!-- Open Graph for Social Media -->
-    <meta property="og:title" content="🔥 AI Meme Generator - Bikin Meme Viral!">
-    <meta property="og:description" content="Generator meme AI terpanas! Bikin meme viral dalam detik!">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630/ff6b6b/white?text=AI+MEME+GENERATOR">
-    <meta property="og:url" content="https://aimemegenerator.com">
+    <!-- Open Graph -->
+    <meta property="og:title" content="WebCraftID - Marketplace Template Website Premium Indonesia">
+    <meta property="og:description" content="Marketplace template website premium terlengkap di Indonesia dengan hosting dan domain included.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://market.vinnesia.my.id">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop">
+    <meta property="og:site_name" content="WebCraftID">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WebCraftID - Marketplace Template Premium">
+    <meta name="twitter:description" content="Marketplace template website premium terlengkap di Indonesia">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=630&fit=crop">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" as="style">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23667eea;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23764ba2;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23grad)' rx='20'/%3E%3Ctext x='50' y='60' font-family='Space Grotesk' font-size='40' font-weight='700' fill='white' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "WebCraftID",
+        "description": "Marketplace Template Website Premium Indonesia",
+        "url": "https://market.vinnesia.my.id",
+        "logo": "https://market.vinnesia.my.id/logo.svg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressRegion": "Indonesia"
+        },
+        "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "IDR",
+            "lowPrice": "199000",
+            "highPrice": "4999000"
+        },
+        "foundingDate": "2024",
+        "founder": {
+            "@type": "Organization",
+            "name": "WebCraftID Team"
+        }
+    }
+    </script>
     
     <style>
+        :root {
+            --primary-color: #0f1419;
+            --secondary-color: #f8fafc;
+            --accent-color: #667eea;
+            --accent-hover: #5a6fd8;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-success: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --text-primary: #0f1419;
+            --text-secondary: #64748b;
+            --text-muted: #94a3b8;
+            --border-color: #e2e8f0;
+            --shadow-xs: 0 1px 2px rgba(0,0,0,0.05);
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
+            --shadow-lg: 0 10px 25px rgba(0,0,0,0.1);
+            --shadow-xl: 0 25px 50px rgba(0,0,0,0.25);
+            --border-radius-xs: 4px;
+            --border-radius-sm: 8px;
+            --border-radius-md: 12px;
+            --border-radius-lg: 16px;
+            --border-radius-xl: 24px;
+            --transition-fast: all 0.15s ease;
+            --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            --max-width: 1280px;
+            --container-padding: 1.5rem;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background: #ffffff;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+        /* Utility Classes */
+        .sr-only {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border: 0 !important;
         }
 
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 16px;
+            background: var(--primary-color);
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            border-radius: var(--border-radius-sm);
+            z-index: 1000;
+            font-weight: 600;
+            transition: var(--transition-normal);
+        }
+
+        .skip-link:focus {
+            top: 16px;
+        }
+
+        /* Header */
         .header {
-            text-align: center;
-            margin-bottom: 50px;
-            animation: slideDown 0.8s ease-out;
-        }
-
-        .header h1 {
-            font-size: 3.5rem;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            margin-bottom: 10px;
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d, #6bcf7e, #4ecdc4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: rainbow 3s ease-in-out infinite;
-        }
-
-        .header p {
-            font-size: 1.2rem;
-            color: #f0f0f0;
-            margin-bottom: 20px;
-        }
-
-        .viral-counter {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 15px;
-            display: inline-block;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .viral-counter span {
-            color: #ffd93d;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-
-        .main-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .generator-section, .preview-section {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            animation: slideUp 0.8s ease-out;
-        }
-
-        .generator-section h2, .preview-section h2 {
-            color: #333;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-
-        .input-group {
-            margin-bottom: 20px;
-        }
-
-        .input-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-            color: #555;
-        }
-
-        .input-group input, .input-group select, .input-group textarea {
+            position: fixed;
+            top: 0;
             width: 100%;
-            padding: 12px;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 100;
+            transition: var(--transition-normal);
         }
 
-        .input-group input:focus, .input-group select:focus, .input-group textarea:focus {
-            outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            box-shadow: var(--shadow-md);
         }
 
-        .template-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 10px;
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
         }
 
-        .template-option {
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s;
-            overflow: hidden;
-            aspect-ratio: 1;
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            transition: var(--transition-normal);
         }
 
-        .template-option:hover {
-            border-color: #667eea;
+        .logo:hover {
             transform: scale(1.05);
         }
 
-        .template-option.selected {
-            border-color: #ff6b6b;
-            box-shadow: 0 0 10px rgba(255, 107, 107, 0.3);
-        }
-
-        .template-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .btn-generate {
-            width: 100%;
-            padding: 15px;
-            background: linear-gradient(45deg, #ff6b6b, #ffd93d);
-            border: none;
-            border-radius: 50px;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            margin-top: 10px;
-        }
-
-        .btn-generate:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
-        }
-
-        .meme-preview {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            min-height: 400px;
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-primary);
+            border-radius: var(--border-radius-sm);
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 2px dashed #ddd;
-            position: relative;
-        }
-
-        .meme-placeholder {
-            color: #888;
-            font-size: 1.1rem;
-        }
-
-        .generated-meme {
-            position: relative;
-            max-width: 100%;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        .meme-canvas {
-            position: relative;
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        .meme-image {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 8px;
-        }
-
-        .meme-text {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            font-family: 'Arial Black', Arial, sans-serif;
-            font-weight: 900;
-            font-size: clamp(16px, 4vw, 28px);
             color: white;
-            text-shadow: 2px 2px 4px black, -2px -2px 4px black, 2px -2px 4px black, -2px 2px 4px black;
-            text-transform: uppercase;
-            line-height: 1.1;
-            padding: 0 10px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            box-shadow: var(--shadow-sm);
         }
 
-        .meme-text.top {
-            top: 10px;
+        .logo-text {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        .meme-text.bottom {
-            bottom: 10px;
-        }
-
-        .stats-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        .stat-card {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #ffd93d;
-            display: block;
-        }
-
-        .stat-label {
-            color: #f0f0f0;
-            margin-top: 5px;
-        }
-
-        .social-buttons {
+        .nav-menu {
             display: flex;
-            gap: 10px;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-primary);
+            font-weight: 500;
+            position: relative;
+            transition: var(--transition-normal);
+            padding: 8px 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-color);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            background: var(--gradient-primary);
+            color: white !important;
+            padding: 12px 24px;
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition-normal);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: var(--text-primary);
+            padding: 8px;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            min-height: 90vh;
+            background: linear-gradient(135deg, rgba(15,20,25,0.95), rgba(102,126,234,0.1)), 
+                        url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&h=1280&fit=crop') center/cover;
+            display: flex;
+            align-items: center;
             justify-content: center;
-            margin-top: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, transparent 0%, rgba(15,20,25,0.4) 100%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 var(--container-padding);
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(102, 126, 234, 0.2);
+            color: var(--accent-color);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 800;
+            margin-bottom: 24px;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            font-weight: 400;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
             flex-wrap: wrap;
         }
 
-        .social-btn {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 25px;
+        .btn-primary {
+            background: var(--gradient-primary);
             color: white;
-            font-weight: bold;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            transition: var(--transition-normal);
+            border: none;
             cursor: pointer;
-            transition: transform 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--shadow-sm);
+            font-size: 16px;
         }
 
-        .social-btn:hover {
-            transform: scale(1.05);
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
         }
 
-        .btn-share { background: #1da1f2; }
-        .btn-instagram { background: #e4405f; }
-        .btn-whatsapp { background: #25d366; }
-        .btn-download { background: #28a745; }
-
-        .trending-section {
-            background: rgba(255,255,255,0.95);
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 30px;
-            animation: slideUp 1s ease-out;
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            transition: var(--transition-normal);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            font-size: 16px;
         }
 
-        .trending-memes {
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--secondary-color);
+            padding: 80px 0;
+        }
+
+        .stats-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        .stats-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 32px;
         }
 
-        .trending-item {
-            background: white;
-            border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-
-        .trending-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .trending-preview {
-            position: relative;
-            margin-bottom: 10px;
-        }
-
-        .trending-img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        .footer {
+        .stat-item {
             text-align: center;
-            color: #f0f0f0;
-            padding: 30px;
+            padding: 32px 24px;
+            background: white;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-normal);
+            border: 1px solid var(--border-color);
         }
 
-        @keyframes slideDown {
-            from { transform: translateY(-50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+        .stat-item:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-md);
         }
 
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+        .stat-number {
+            font-size: 48px;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-family: 'Space Grotesk', sans-serif;
+            line-height: 1.2;
+            margin-bottom: 8px;
         }
 
-        @keyframes rainbow {
-            0%, 100% { filter: hue-rotate(0deg); }
-            50% { filter: hue-rotate(180deg); }
+        .stat-label {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 100px 0;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: 20px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        /* Template Categories */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+        }
+
+        .category-card {
+            position: relative;
+            height: 280px;
+            border-radius: var(--border-radius-lg);
+            overflow: hidden;
+            cursor: pointer;
+            transition: var(--transition-normal);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+
+        .category-card:hover {
+            transform: translateY(-12px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .category-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-slow);
+        }
+
+        .category-card:hover .category-image {
+            transform: scale(1.1);
+        }
+
+        .category-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 32px;
+            opacity: 0;
+            transition: var(--transition-normal);
+        }
+
+        .category-card:hover .category-overlay {
+            opacity: 0.95;
+        }
+
+        .category-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .category-description {
+            font-size: 16px;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .category-count {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            color: var(--text-primary);
+            padding: 8px 12px;
+            border-radius: var(--border-radius-sm);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background: var(--secondary-color);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-normal);
+            position: relative;
+            border: 2px solid transparent;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--accent-color);
+            transform: scale(1.05);
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        }
+
+        .pricing-card.featured::before {
+            content: '🏆 Most Popular';
+            position: absolute;
+            top: -16px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .plan-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-primary);
+            border-radius: var(--border-radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 24px;
+            color: white;
+        }
+
+        .plan-name {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .plan-description {
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .plan-price {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 32px;
+        }
+
+        .price-currency {
+            font-size: 20px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .price-amount {
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--text-primary);
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0 4px;
+        }
+
+        .price-suffix {
+            color: var(--text-secondary);
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .price-period {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-left: 8px;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .feature-icon {
+            color: #10b981;
+            font-size: 18px;
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .plan-cta {
+            width: 100%;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            padding: 16px 24px;
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: var(--transition-normal);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .plan-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .pricing-card:not(.featured) .plan-cta {
+            background: var(--primary-color);
+        }
+
+        /* Services Table */
+        .services-table-section {
+            padding: 100px 0;
+            background: white;
+        }
+
+        .table-container {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            margin-top: 60px;
+            border: 1px solid var(--border-color);
+        }
+
+        .services-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .services-table th,
+        .services-table td {
+            padding: 24px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .services-table th {
+            background: var(--secondary-color);
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 16px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .services-table tr:hover {
+            background: rgba(102, 126, 234, 0.02);
+        }
+
+        .services-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .service-name {
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .service-description {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .price-cell {
+            font-weight: 700;
+            color: var(--accent-color);
+            font-size: 18px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .duration-cell {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+            margin-top: 80px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-normal);
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-icon-large {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: var(--border-radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin: 0 auto 24px;
+            color: white;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .feature-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .feature-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 32px;
+            border-radius: var(--border-radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition-normal);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .testimonial-content {
+            font-style: italic;
+            margin-bottom: 24px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .author-avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .author-info h4 {
+            font-weight: 600;
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+
+        .author-info p {
+            opacity: 0.7;
+            font-size: 14px;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 60px auto 0;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: var(--border-radius-lg);
+            margin-bottom: 16px;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 24px;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition-normal);
+        }
+
+        .faq-question:hover {
+            background: var(--secondary-color);
+        }
+
+        .faq-answer {
+            padding: 0 24px;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 24px 24px;
+            max-height: 200px;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+            font-size: 20px;
+            color: var(--accent-color);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--gradient-primary);
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .cta-description {
+            font-size: 20px;
+            margin-bottom: 32px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 80px 0 32px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand {
+            max-width: 400px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .footer-logo .logo-icon {
+            width: 48px;
+            height: 48px;
+            font-size: 24px;
+        }
+
+        .footer-logo .logo-text {
+            font-size: 28px;
+            color: white;
+            background: none;
+            -webkit-text-fill-color: white;
+        }
+
+        .footer-description {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 24px;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .footer-contact {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .footer-contact p {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-section h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: white;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition-normal);
+            font-size: 16px;
+        }
+
+        .footer-link:hover {
+            color: var(--accent-color);
+            transform: translateX(4px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .social-link {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--border-radius-sm);
+            text-decoration: none;
+            transition: var(--transition-normal);
+            font-size: 20px;
+        }
+
+        .social-link:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.6);
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-links-bottom {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-links-bottom a {
+            color: rgba(255, 255, 255, 0.6);
+            text-decoration: none;
+            font-size: 14px;
+            transition: var(--transition-normal);
+        }
+
+        .footer-links-bottom a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        /* Animations */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .slide-in-left {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.6s ease;
+        }
+
+        .slide-in-left.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .slide-in-right {
+            opacity: 0;
+            transform: translateX(30px);
+            transition: all 0.6s ease;
+        }
+
+        .slide-in-right.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .footer-content {
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 32px;
+            }
+            
+            .footer-brand {
+                grid-column: 1 / -1;
+                max-width: none;
+            }
         }
 
         @media (max-width: 768px) {
-            .header h1 { font-size: 2.5rem; }
-            .main-content { grid-template-columns: 1fr; }
-            .container { padding: 10px; }
-            .template-grid { grid-template-columns: repeat(2, 1fr); }
+            :root {
+                --container-padding: 1rem;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: white;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding-top: 32px;
+                transition: left 0.3s ease;
+                box-shadow: var(--shadow-md);
+                z-index: 99;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-menu li {
+                width: 100%;
+                text-align: center;
+                padding: 8px 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+
+            .section-header {
+                margin-bottom: 48px;
+            }
+
+            .stats {
+                padding: 60px 0;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .categories-grid,
+            .features-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .pricing-card.featured {
+                transform: none;
+                order: -1;
+            }
+
+            .table-container {
+                overflow-x: auto;
+            }
+
+            .services-table {
+                min-width: 700px;
+            }
+
+            .services-table th,
+            .services-table td {
+                padding: 16px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .cta-title {
+                font-size: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 0 1rem;
+                height: 70px;
+            }
+
+            .hero {
+                margin-top: 70px;
+                min-height: 80vh;
+                padding: 40px 0;
+            }
+
+            .hero-content {
+                padding: 0 1rem;
+            }
+
+            .logo-text {
+                font-size: 20px;
+            }
+
+            .logo-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 18px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-item {
+                padding: 24px 16px;
+            }
+
+            .pricing-card,
+            .feature-card,
+            .testimonial-card {
+                padding: 24px;
+            }
+
+            .plan-price {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .price-amount {
+                font-size: 36px;
+            }
+
+            .services-table th,
+            .services-table td {
+                padding: 12px;
+                font-size: 14px;
+            }
+
+            .faq-question {
+                padding: 16px;
+                font-size: 16px;
+            }
+
+            .faq-answer {
+                padding: 0 16px;
+            }
+
+            .faq-item.active .faq-answer {
+                padding: 0 16px 16px;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* High contrast mode */
+        @media (prefers-contrast: high) {
+            :root {
+                --border-color: #000;
+                --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+                --shadow-md: 0 4px 6px rgba(0,0,0,0.3);
+                --shadow-lg: 0 10px 25px rgba(0,0,0,0.4);
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            .header, .mobile-menu-btn, .hero-cta, .cta-section, .nav-cta {
+                display: none !important;
+            }
+            
+            .hero {
+                margin-top: 0;
+                background: none !important;
+                color: black !important;
+                min-height: auto;
+                padding: 2rem 0;
+            }
+            
+            * {
+                box-shadow: none !important;
+            }
+
+            .pricing-card, .feature-card, .testimonial-card {
+                break-inside: avoid;
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--secondary-color);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-color);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-hover);
+        }
+
+        /* Focus styles for better accessibility */
+        .using-keyboard *:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+        }
+
+        /* Additional utility classes */
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>🔥 AI MEME GENERATOR 🔥</h1>
-            <p>Bikin Meme Viral Dalam Hitungan Detik! Dijamin Ngakak! 😂</p>
-            <div class="viral-counter">
-                🚀 <span id="meme-count">127,492</span> meme sudah dibuat hari ini!
-            </div>
-        </header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <a href="/" class="logo" aria-label="WebCraftID Home">
+                <div class="logo-icon">W</div>
+                <div class="logo-text">WebCraftID</div>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="/" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="/templates" class="nav-link" role="menuitem">Templates</a></li>
+                <li role="none"><a href="/pricing" class="nav-link" role="menuitem">Pricing</a></li>
+                <li role="none"><a href="/services" class="nav-link" role="menuitem">Services</a></li>
+                <li role="none"><a href="/support" class="nav-link" role="menuitem">Support</a></li>
+                <li role="none"><a href="/contact" class="nav-link" role="menuitem">Contact</a></li>
+                <li role="none"><a href="/order" class="nav-cta" role="menuitem">🚀 Order Now</a></li>
+            </ul>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">☰</button>
+        </nav>
+    </header>
 
-        <section class="stats-section">
-            <div class="stat-card">
-                <span class="stat-number" id="total-memes">2.3M+</span>
-                <div class="stat-label">Total Memes</div>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number" id="viral-today">15K+</span>
-                <div class="stat-label">Viral Hari Ini</div>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number" id="users-online">892</span>
-                <div class="stat-label">Users Online</div>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number">⭐⭐⭐⭐⭐</span>
-                <div class="stat-label">Rating Pengguna</div>
-            </div>
-        </section>
-
-        <main class="main-content">
-            <section class="generator-section">
-                <h2>🎨 Buat Meme Kamu</h2>
-                
-                <div class="input-group">
-                    <label>Pilih Template Meme:</label>
-                    <div class="template-grid">
-                        <div class="template-option selected" data-template="drake" onclick="selectTemplate(this, 'drake')">
-                            <img src="https://imgflip.com/s/meme/Drake-Helping.jpg" alt="Drake" class="template-img">
-                        </div>
-                        <div class="template-option" data-template="distracted" onclick="selectTemplate(this, 'distracted')">
-                            <img src="https://imgflip.com/s/meme/Distracted-Boyfriend.jpg" alt="Distracted Boyfriend" class="template-img">
-                        </div>
-                        <div class="template-option" data-template="woman-cat" onclick="selectTemplate(this, 'woman-cat')">
-                            <img src="https://imgflip.com/s/meme/Woman-Yelling-At-Cat.jpg" alt="Woman Cat" class="template-img">
-                        </div>
-                        <div class="template-option" data-template="expanding-brain" onclick="selectTemplate(this, 'expanding-brain')">
-                            <img src="https://imgflip.com/s/meme/Expanding-Brain.jpg" alt="Expanding Brain" class="template-img">
-                        </div>
-                        <div class="template-option" data-template="change-my-mind" onclick="selectTemplate(this, 'change-my-mind')">
-                            <img src="https://imgflip.com/s/meme/Change-My-Mind.jpg" alt="Change My Mind" class="template-img">
-                        </div>
-                        <div class="template-option" data-template="this-is-fine" onclick="selectTemplate(this, 'this-is-fine')">
-                            <img src="https://imgflip.com/s/meme/This-Is-Fine.jpg" alt="This is Fine" class="template-img">
-                        </div>
-                    </div>
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="home" role="banner">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    🇮🇩 Made in Indonesia
                 </div>
-
-                <div class="input-group">
-                    <label for="top-text">Text Atas:</label>
-                    <input type="text" id="top-text" placeholder="Masukkan text atas..." maxlength="80">
-                </div>
-
-                <div class="input-group">
-                    <label for="bottom-text">Text Bawah:</label>
-                    <input type="text" id="bottom-text" placeholder="Masukkan text bawah..." maxlength="80">
-                </div>
-
-                <div class="input-group">
-                    <label for="mood">Mood Meme:</label>
-                    <select id="mood">
-                        <option value="funny">😂 Lucu</option>
-                        <option value="sarcastic">😏 Sarkastik</option>
-                        <option value="relatable">😭 Relatable</option>
-                        <option value="savage">🔥 Savage</option>
-                        <option value="wholesome">🥰 Wholesome</option>
-                    </select>
-                </div>
-
-                <button class="btn-generate" onclick="generateMeme()">
-                    ✨ GENERATE MEME VIRAL! ✨
-                </button>
-            </section>
-
-            <section class="preview-section">
-                <h2>👀 Preview Meme</h2>
-                <div class="meme-preview" id="meme-preview">
-                    <div class="meme-placeholder">
-                        Meme kamu akan muncul di sini! 🎭<br>
-                        Pilih template dan tulis text, lalu klik Generate! 🚀
-                    </div>
-                </div>
-                
-                <div class="social-buttons" id="social-buttons" style="display: none;">
-                    <button class="social-btn btn-download" onclick="downloadMeme()">📥 Download</button>
-                    <button class="social-btn btn-share" onclick="shareToTwitter()">📱 Twitter</button>
-                    <button class="social-btn btn-instagram" onclick="shareToInstagram()">📸 Instagram</button>
-                    <button class="social-btn btn-whatsapp" onclick="shareToWhatsApp()">💬 WhatsApp</button>
-                </div>
-            </section>
-        </main>
-
-        <section class="trending-section">
-            <h2>🔥 Trending Memes Hari Ini</h2>
-            <div class="trending-memes">
-                <div class="trending-item" onclick="useTrendingMeme('When deadline besok', 'Tapi masih rebahan', 'drake')">
-                    <div class="trending-preview">
-                        <img src="https://imgflip.com/s/meme/Drake-Helping.jpg" alt="Trending 1" class="trending-img">
-                    </div>
-                    <div><strong>When deadline besok / Tapi masih rebahan</strong></div>
-                    <small>👍 12.5K likes • 🔥 Drake Template</small>
-                </div>
-                <div class="trending-item" onclick="useTrendingMeme('Gaji baru masuk', 'Langsung habis buat makan', 'distracted')">
-                    <div class="trending-preview">
-                        <img src="https://imgflip.com/s/meme/Distracted-Boyfriend.jpg" alt="Trending 2" class="trending-img">
-                    </div>
-                    <div><strong>Gaji baru masuk / Langsung habis buat makan</strong></div>
-                    <small>👍 8.7K likes • 🔥 Distracted BF</small>
-                </div>
-                <div class="trending-item" onclick="useTrendingMeme('Me: I will study tonight', 'Also me: Opens Netflix', 'woman-cat')">
-                    <div class="trending-preview">
-                        <img src="https://imgflip.com/s/meme/Woman-Yelling-At-Cat.jpg" alt="Trending 3" class="trending-img">
-                    </div>
-                    <div><strong>Study tonight / Opens Netflix instead</strong></div>
-                    <small>👍 15.2K likes • 🔥 Woman Cat</small>
+                <h1 class="hero-title">Marketplace Template Website Premium Indonesia</h1>
+                <p class="hero-subtitle">Koleksi template website berkualitas tinggi dari statis hingga dinamis. Dengan hosting premium dan domain gratis. Solusi terpercaya untuk kesuksesan bisnis digital Anda.</p>
+                <div class="hero-cta">
+                    <a href="#pricing" class="btn-primary">
+                        💰 Lihat Harga Terbaik
+                    </a>
+                    <a href="#templates" class="btn-secondary">🎨 Jelajahi Template</a>
                 </div>
             </div>
         </section>
-    </div>
 
-    <footer class="footer">
-        <p>© 2025 AI Meme Generator - Made with 💖 for Viral Content</p>
-        <p>🔥 Sudah viral? Tag kita di sosmed! #AIMemeGenerator 🔥</p>
-    </footer>
-
-    <script>
-        let selectedTemplate = 'drake';
-        let memeCount = 127492;
-        let totalMemes = 2300000;
-        let viralToday = 15000;
-        let usersOnline = 892;
-
-        const memeTemplates = {
-            'drake': {
-                url: 'https://imgflip.com/s/meme/Drake-Helping.jpg',
-                name: 'Drake Pointing'
-            },
-            'distracted': {
-                url: 'https://imgflip.com/s/meme/Distracted-Boyfriend.jpg',
-                name: 'Distracted Boyfriend'
-            },
-            'woman-cat': {
-                url: 'https://imgflip.com/s/meme/Woman-Yelling-At-Cat.jpg',
-                name: 'Woman Yelling at Cat'
-            },
-            'expanding-brain': {
-                url: 'https://imgflip.com/s/meme/Expanding-Brain.jpg',
-                name: 'Expanding Brain'
-            },
-            'change-my-mind': {
-                url: 'https://imgflip.com/s/meme/Change-My-Mind.jpg',
-                name: 'Change My Mind'
-            },
-            'this-is-fine': {
-                url: 'https://imgflip.com/s/meme/This-Is-Fine.jpg',
-                name: 'This is Fine'
-            }
-        };
-
-        function selectTemplate(element, template) {
-            // Remove selected class from all templates
-            document.querySelectorAll('.template-option').forEach(t => t.classList.remove('selected'));
-            // Add selected class to clicked template
-            element.classList.add('selected');
-            selectedTemplate = template;
-        }
-
-        function updateCounters() {
-            memeCount += Math.floor(Math.random() * 10) + 1;
-            usersOnline += Math.floor(Math.random() * 5) - 2;
-            if (usersOnline < 800) usersOnline = 800 + Math.floor(Math.random() * 100);
-            
-            document.getElementById('meme-count').textContent = memeCount.toLocaleString();
-            document.getElementById('users-online').textContent = usersOnline.toLocaleString();
-        }
-
-        setInterval(updateCounters, 3000);
-
-        function generateMeme() {
-            const topText = document.getElementById('top-text').value || '';
-            const bottomText = document.getElementById('bottom-text').value || '';
-            const template = memeTemplates[selectedTemplate];
-            
-            if (!topText && !bottomText) {
-                alert('Masukkan text atas atau bawah dulu bro! 😅');
-                return;
-            }
-            
-            const memePreview = document.getElementById('meme-preview');
-            memePreview.innerHTML = `
-                <div class="generated-meme">
-                    <div class="meme-canvas">
-                        <img src="${template.url}" alt="${template.name}" class="meme-image" crossorigin="anonymous">
-                        ${topText ? `<div class="meme-text top">${topText}</div>` : ''}
-                        ${bottomText ? `<div class="meme-text bottom">${bottomText}</div>` : ''}
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="stats-container">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in">
+                        <div class="stat-number" data-target="850">0</div>
+                        <div class="stat-label">Template Premium</div>
                     </div>
-                    <div style="margin-top: 15px; color: #666; font-size: 0.9rem;">
-                        Template: ${template.name}
+                    <div class="stat-item fade-in">
+                        <div class="stat-number" data-target="15000">0</div>
+                        <div class="stat-label">Customer Bahagia</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number" data-target="99.9">0</div>
+                        <div class="stat-label">% Uptime Hosting</div>
+                    </div>
+                    <div class="stat-item fade-in">
+                        <div class="stat-number" data-target="24">0</div>
+                        <div class="stat-label">Jam Support</div>
                     </div>
                 </div>
-            `;
-            
-            document.getElementById('social-buttons').style.display = 'flex';
-            
-            // Animate generation
-            memePreview.style.animation = 'slideUp 0.5s ease-out';
-            
-            // Update counter
-            memeCount++;
-            document.getElementById('meme-count').textContent = memeCount.toLocaleString();
-        }
+            </div>
+        </section>
 
-        function useTrendingMeme(topText, bottomText, template) {
-            document.getElementById('top-text').value = topText;
-            document.getElementById('bottom-text').value = bottomText;
-            
-            // Select the template
-            document.querySelectorAll('.template-option').forEach(t => t.classList.remove('selected'));
-            document.querySelector(`[data-template="${template}"]`).classList.add('selected');
-            selectedTemplate = template;
-            
-            generateMeme();
-            
-            // Scroll to preview
-            document.getElementById('meme-preview').scrollIntoView({ behavior: 'smooth' });
-        }
+        <!-- Template Categories -->
+        <section class="section" id="templates">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Kategori Template Premium</h2>
+                    <p class="section-subtitle">Pilihan lengkap template untuk berbagai jenis bisnis dan industri dengan desain modern dan fitur terdepan</p>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card slide-in-left" tabindex="0" role="button" aria-label="Business Templates">
+                        <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=500&h=350&fit=crop" alt="Business Website Templates" class="category-image" loading="lazy">
+                        <div class="category-count">120+ Templates</div>
+                        <div class="category-overlay">
+                            <h3 class="category-title">🏢 Corporate & Business</h3>
+                            <p class="category-description">Template profesional untuk perusahaan, startup, dan korporat dengan desain yang elegan dan trustworthy</p>
+                        </div>
+                    </div>
+                    <div class="category-card slide-in-left" tabindex="0" role="button" aria-label="E-commerce Templates">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=350&fit=crop" alt="E-commerce Website Templates" class="category-image" loading="lazy">
+                        <div class="category-count">200+ Templates</div>
+                        <div class="category-overlay">
+                            <h3 class="category-title">🛒 E-commerce & Shop</h3>
+                            <p class="category-description">Toko online lengkap dengan payment gateway, inventory management, dan dashboard analytics</p>
+                        </div>
+                    </div>
+                    <div class="category-card slide-in-right" tabindex="0" role="button" aria-label="Portfolio Templates">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500&h=350&fit=crop" alt="Portfolio Website Templates" class="category-image" loading="lazy">
+                        <div class="category-count">150+ Templates</div>
+                        <div class="category-overlay">
+                            <h3 class="category-title">🎨 Portfolio & Creative</h3>
+                            <p class="category-description">Showcase karya dengan desain kreatif untuk designer, photographer, dan creative agency</p>
+                        </div>
+                    </div>
+                    <div class="category-card slide-in-right" tabindex="0" role="button" aria-label="Blog Templates">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68e2c6b725?w=500&h=350&fit=crop" alt="Blog Website Templates" class="category-image" loading="lazy">
+                        <div class="category-count">80+ Templates</div>
+                        <div class="category-overlay">
+                            <h3 class="category-title">📝 Blog & Magazine</h3>
+                            <p class="category-description">Platform blog yang SEO-friendly dengan CMS advanced dan multiple author support</p>
+                        </div>
+                    </div>
+                    <div class="category-card slide-in-left" tabindex="0" role="button" aria-label="Restaurant Templates">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&h=350&fit=crop" alt="Restaurant Website Templates" class="category-image" loading="lazy">
+                        <div class="category-count">90+ Templates</div>
+                        <div class="category-overlay">
+                            <h3 class="category-title">🍽️ Restaurant & Food</h3>
+                            <p class="category-description">Template untuk restoran, cafe, dan food business dengan online reservation dan menu digital</p>
+                        </div>
+                    </div>
+                    <div class="category-card slide-in-right" tabindex="0" role="button" aria-label="Landing Page Templates">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=350&fit=crop" alt="Landing Page Templates" class="category-image" loading="lazy">
+                        <div class="category-count">110+ Templates</div>
+                        <div class="category-overlay">
+                            <h3 class="category-title">🚀 Landing Page</h3>
+                            <p class="category-description">High-converting landing pages untuk campaign marketing dan product launch</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        function downloadMeme() {
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            const memeImg = document.querySelector('.generated-meme .meme-image');
-            
-            if (!memeImg) {
-                alert('Generate meme dulu sebelum download! 😊');
-                return;
-            }
+        <!-- Pricing Section -->
+        <section class="section pricing" id="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Paket Harga Terbaik</h2>
+                    <p class="section-subtitle">Pilih paket yang sesuai dengan kebutuhan dan budget bisnis Anda. Semua paket include support premium dan update lifetime</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card fade-in">
+                        <div class="plan-icon">📱</div>
+                        <h3 class="plan-name">Template Statis</h3>
+                        <p class="plan-description">Sempurna untuk website company profile, portofolio, dan landing page dengan performa super cepat</p>
+                        <div class="plan-price">
+                            <span class="price-currency">Rp</span>
+                            <span class="price-amount">199</span>
+                            <span class="price-suffix">K</span>
+                            <span class="price-period">sekali bayar</span>
+                        </div>
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Template HTML/CSS/JS Premium
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Fully Responsive All Devices
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Source Code Complete
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Documentation Lengkap
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Free Update Lifetime
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Support 30 Hari
+                            </li>
+                        </ul>
+                        <button class="plan-cta" data-plan="statis">Pilih Paket Ini</button>
+                    </div>
+                    
+                    <div class="pricing-card featured fade-in">
+                        <div class="plan-icon">⚡</div>
+                        <h3 class="plan-name">Template Premium</h3>
+                        <p class="plan-description">Template dynamic dengan CMS, database, dan admin panel untuk website bisnis professional</p>
+                        <div class="plan-price">
+                            <span class="price-currency">Rp</span>
+                            <span class="price-amount">899</span>
+                            <span class="price-suffix">K</span>
+                            <span class="price-period">sekali bayar</span>
+                        </div>
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Template dengan CMS Advanced
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Admin Dashboard Modern
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Database Integration MySQL
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                SEO Optimized + Analytics
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Form & Email Integration
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Support 90 Hari Premium
+                            </li>
+                        </ul>
+                        <button class="plan-cta" data-plan="premium">Pilih Paket Populer</button>
+                    </div>
+                    
+                    <div class="pricing-card fade-in">
+                        <div class="plan-icon">🎯</div>
+                        <h3 class="plan-name">Full Package</h3>
+                        <p class="plan-description">Solusi lengkap: Template Premium + Domain + Hosting + Setup. Siap online dalam 24 jam!</p>
+                        <div class="plan-price">
+                            <span class="price-currency">Rp</span>
+                            <span class="price-amount">1.699</span>
+                            <span class="price-suffix">K</span>
+                            <span class="price-period">tahun pertama</span>
+                        </div>
+                        <ul class="features-list">
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Template Premium Pilihan
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Domain .com/.id (1 Tahun)
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Hosting SSD 20GB Premium
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                SSL Certificate Gratis
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Setup & Install Gratis
+                            </li>
+                            <li class="feature-item">
+                                <span class="feature-icon">✅</span>
+                                Support 1 Tahun VIP
+                            </li>
+                        </ul>
+                        <button class="plan-cta" data-plan="full">Pilih Full Package</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            const img = new Image();
-            img.crossOrigin = 'anonymous';
-            img.onload = function() {
-                canvas.width = img.width;
-                canvas.height = img.height;
-                
-                // Draw image
-                ctx.drawImage(img, 0, 0);
-                
-                // Set text style
-                ctx.fillStyle = 'white';
-                ctx.strokeStyle = 'black';
-                ctx.lineWidth = 3;
-                ctx.textAlign = 'center';
-                ctx.font = 'bold 40px Arial';
-                
-                // Draw top text
-                const topText = document.getElementById('top-text').value;
-                if (topText) {
-                    ctx.strokeText(topText.toUpperCase(), canvas.width/2, 60);
-                    ctx.fillText(topText.toUpperCase(), canvas.width/2, 60);
-                }
-                
-                // Draw bottom text
-                const bottomText = document.getElementById('bottom-text').value;
-                if (bottomText) {
-                    ctx.strokeText(bottomText.toUpperCase(), canvas.width/2, canvas.height - 20);
-                    ctx.fillText(bottomText.toUpperCase(), canvas.width/2, canvas.height - 20);
-                }
-                
-                // Download
-                const link = document.createElement('a');
-                link.download = `meme-${Date.now()}.png`;
-                link.href = canvas.toDataURL();
-                link.click();
-            };
-            img.src = memeImg.src;
-        }
-
-        function shareToTwitter() {
-            const topText = document.getElementById('top-text').value;
-            const bottomText = document.getElementById('bottom-text').value;
-            const text = `Baru bikin meme viral: "${topText} / ${bottomText}" pake AI Meme Generator! 🔥 Coba juga di`;
-            window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`, '_blank');
-        }
-
-        function shareToInstagram() {
-            alert('📸 Download meme-nya dulu, terus post ke Instagram! Jangan lupa tag #AIMemeGenerator biar viral! 🔥');
-        }
-
-        function shareToWhatsApp() {
-            const text = "Coba deh AI Meme Generator ini! Bisa bikin meme profesional dalam detik! Template-nya keren semua 🚀";
-            window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
-        }
-
-        // Add dynamic effects
-        document.addEventListener('DOMContentLoaded', function() {
-            setInterval(() => {
-                const viralTodayEl = document.getElementById('viral-today');
-                viralToday += Math.floor(Math.random() * 100);
-                viralTodayEl.textContent = (viralToday/1000).toFixed(1) + 'K+';
-            }, 5000);
-        });
-    </script>
-</body>
-</html>
+        <!-- Services Table -->
+        <section class="services-table-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Daftar Lengkap Layanan & Harga</h2>
+                    <p class="section-subtitle">Transparansi harga untuk semua layanan kami. Tidak ada biaya tersembunyi, semua sudah termasuk support premium</p>
+                </div>
+                <div class="table-container">
+                    <table class="services-table">
+                        <thead>
+                            <tr>
+                                <th>Layanan & Deskripsi</th>
+                                <th>Spesifikasi</th>
+                                <th>Harga</th>
+                                <th>Waktu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="service-name">🎨 Template HTML Statis Premium</div>
+                                    <div class="service-description">Template siap pakai dengan kode bersih dan dokumentasi lengkap</div>
+                                </td>
+                                <td>HTML5, CSS3, JavaScript, Bootstrap 5, Responsive Design, Cross-browser Compatible</td>
+                                <td class="price-cell">Rp 199K</td>
+                                <td class="duration-cell">Instant Download</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="service-name">⚡
