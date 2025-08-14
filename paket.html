@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pilih paket website statis profesional Vin Nesia Web Market. Dari DIY hingga full-service dengan teknologi terdepan. Harga transparan mulai 100rb.">
+    <meta name="keywords" content="website statis modern, paket web profesional, hosting github pages, domain premium, full-service web">
+    <meta name="author" content="Vin Nesia Web Market">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6366f1">
+    <meta property="og:title" content="Paket Website Statis Modern & Profesional - Vin Nesia Web Market">
+    <meta property="og:description" content="4 tier paket website statis dengan teknologi terdepan. Transparent pricing, premium quality, exceptional service.">
+    <meta property="og:url" content="https://webmarket.vinnesia.my.id/paket.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://webmarket.vinnesia.my.id/images/og-paket.jpg">
+    <link rel="canonical" href="https://webmarket.vinnesia.my.id/paket.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <title>Premium Website Packages - Vin Nesia Web Market</title>
+    
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+            --secondary-gradient: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+            --success-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            --dark-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --text-primary: #0f172a;
+            --text-secondary: #64748b;
+            --text-muted: #94a3b8;
+            --border-color: rgba(226, 232, 240, 0.8);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --glow: 0 0 20px rgba(99, 102, 241, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Glassmorphism Header */
+        .header {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 900;
+            background: var(--primary-gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(var(--glow));
+        }
+
+        .nav {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            padding: 0.75rem 1.25rem;
+            border-radius: 2rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-gradient);
+            transition: var(--transition);
+            z-index: -1;
+        }
+
+        .nav-link:hover::before,
+        .nav-link.active::before {
+            left: 0;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            transition: var(--transition);
+        }
+
+        /* Hero with Particles Effect */
+        .hero {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 8rem 0 6rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><circle cx="30" cy="30" r="2"/></g></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            max-width: 650px;
+            margin: 0 auto 3rem;
+            line-height: 1.6;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Modern Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--text-primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        .section {
+            padding: 6rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: var(--primary-gradient);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: var(--dark-gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-description {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: var(--primary-gradient);
+            opacity: 0;
+            transform: rotate(45deg);
+            transition: var(--transition);
+        }
+
+        .benefit-card:hover::before {
+            opacity: 0.05;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: var(--shadow-xl);
+            border-color: transparent;
+        }
+
+        .benefit-icon {
+            width: 4rem;
+            height: 4rem;
+            background: var(--primary-gradient);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .benefit-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .benefit-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Modern Package Table */
+        .packages-wrapper {
+            background: white;
+            border-radius: 2rem;
+            padding: 3rem;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border-color);
+            margin: 4rem 0;
+        }
+
+        .package-table {
+            overflow-x: auto;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+        }
+
+        .package-table table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1000px;
+        }
+
+        .package-table th,
+        .package-table td {
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        .package-table th {
+            background: var(--dark-gradient);
+            color: white;
+            font-weight: 700;
+            font-size: 1rem;
+            position: relative;
+        }
+
+        .package-table th:first-child {
+            text-align: left;
+            border-radius: 1rem 0 0 0;
+        }
+
+        .package-table th:last-child {
+            border-radius: 0 1rem 0 0;
+        }
+
+        .package-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+            background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%);
+        }
+
+        .package-highlight {
+            background: var(--primary-gradient) !important;
+            color: white !important;
+            position: relative;
+        }
+
+        .package-highlight::before {
+            content: '🔥 MOST POPULAR';
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+            color: white;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            box-shadow: var(--shadow);
+        }
+
+        .feature-check {
+            color: #10b981;
+            font-weight: 800;
+            font-size: 1.25rem;
+        }
+
+        .feature-cross {
+            color: #ef4444;
+            font-weight: 800;
+            font-size: 1.25rem;
+        }
+
+        .feature-managed {
+            background: var(--success-gradient);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .feature-diy {
+            background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .price-row {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+
+        .price-row td {
+            color: #0369a1;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Info Cards */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .info-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            border-left: 4px solid transparent;
+            transition: var(--transition);
+        }
+
+        .info-card.primary {
+            border-left-color: #6366f1;
+        }
+
+        .info-card.success {
+            border-left-color: #10b981;
+        }
+
+        .info-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .info-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        /* FAQ Modern Design */
+        .faq-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            padding: 6rem 0;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .faq-item:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+            border-color: #6366f1;
+        }
+
+        .faq-question {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .faq-answer {
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><circle cx="20" cy="20" r="1"/></g></svg>') repeat;
+            animation: float 30s infinite linear reverse;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cta-title {
+            font-size: clamp(2rem, 4vw, 3rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-description {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Footer Modern */
+        .footer {
+            background: var(--dark-gradient);
+            color: white;
+            padding: 6rem 0 3rem;
+            position: relative;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3,
+        .footer-section h4 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-bottom: 0.75rem;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .footer-section a:hover {
+            color: #6366f1;
+            transform: translateX(4px);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-links a {
+            width: 3rem;
+            height: 3rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--primary-gradient);
+            transform: translateY(-2px) scale(1.1);
+        }
+
+        .footer-stats {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-stats span {
+            background: var(--primary-gradient);
+            padding: 0.75rem 1.5rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            font-size: 0.875rem;
+            box-shadow: var(--shadow);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero {
+                padding: 6rem 0 4rem;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                padding: 4rem 0;
+            }
+
+            .packages-wrapper {
+                padding: 1.5rem;
+            }
+
+            .package-table th,
+            .package-table td {
+                padding: 1rem 0.75rem;
+                font-size: 0.875rem;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .info-grid,
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-stats {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero {
+                padding: 4rem 0 3rem;
+            }
+
+            .benefit-card,
+            .info-card,
+            .faq-item {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Accessibility & Performance */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        @media (prefers-contrast: high) {
+            :root {
+                --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+                --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+                --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            }
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+    
+    <!-- Modern Header -->
+    <header class="header" role="banner" id="header">
+        <div class="container">
+            <a href="/" class="logo" aria-label="Vin Nesia Web Market - Home">
+                Vin Nesia Web Market
+            </a>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <a href="/" class="nav-link">Beranda</a>
+                <a href="/#products" class="nav-link">Produk</a>
+                <a href="/cara-beli.html" class="nav-link">Cara Beli</a>
+                <a href="/paket.html" class="nav-link active" aria-current="page">Paket</a>
+                <a href="/kontak.html" class="nav-link">Kontak</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu" aria-expanded="false">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>⚡</span>
+                    <span>Paket Website Premium</span>
+                </div>
+                <h1 class="hero-title">Pilih Paket Website Sempurna Anda</h1>
+                <p class="hero-subtitle">Dari solusi DIY hingga layanan premium full-service. Harga transparan, teknologi terdepan, hasil luar biasa.</p>
+                <div class="hero-cta">
+                    <a href="#packages" class="btn btn-primary">
+                        <span>Lihat Paket</span>
+                        <span>↓</span>
+                    </a>
+                    <a href="/kontak.html" class="btn btn-outline">
+                        <span>Konsultasi</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <!-- Benefits Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Mengapa Pilih Kami</div>
+                    <h2 class="section-title">Dibangun untuk Bisnis Modern</h2>
+                    <p class="section-description">Rasakan perbedaannya dengan paket website premium yang dirancang khusus untuk kesuksesan di era digital.</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <div class="benefit-card fade-in-up">
+                        <div class="benefit-icon">🚀</div>
+                        <h3 class="benefit-title">Delivery Super Cepat</h3>
+                        <p class="benefit-description">Dapatkan file website dalam hitungan jam, atau website live dalam 24 jam. Kecepatan tanpa mengorbankan kualitas.</p>
+                    </div>
+                    
+                    <div class="benefit-card fade-in-up">
+                        <div class="benefit-icon">💎</div>
+                        <h3 class="benefit-title">Kode Premium Berkualitas</h3>
+                        <p class="benefit-description">Kode yang bersih, dioptimalkan, dan scalable mengikuti standar industri terbaik. Siap untuk kustomisasi dan pertumbuhan.</p>
+                    </div>
+                    
+                    <div class="benefit-card fade-in-up">
+                        <div class="benefit-icon">🛡️</div>
+                        <h3 class="benefit-title">Garansi 100% Puas</h3>
+                        <p class="benefit-description">Garansi uang kembali jika Anda tidak sepenuhnya puas. Kesuksesan Anda adalah komitmen kami.</p>
+                    </div>
+                    
+                    <div class="benefit-card fade-in-up">
+                        <div class="benefit-icon">🎯</div>
+                        <h3 class="benefit-title">Tim Support Ahli</h3>
+                        <p class="benefit-description">Dukungan profesional dari para ahli industri. Respon cepat dan solusi efektif terjamin.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Package Comparison -->
+        <section class="section" id="packages">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">Bandingkan Paket</div>
+                    <h2 class="section-title">Temukan Yang Paling Cocok</h2>
+                    <p class="section-description">Empat tier yang dirancang untuk memenuhi setiap kebutuhan dan budget. Dari DIY enthusiast hingga enterprise yang mencari solusi full-service.</p>
+                </div>
+
+                <!-- Package Explanation Cards -->
+                <div class="info-grid">
+                    <div class="info-card primary">
+                        <h3 class="info-title">
+                            <span>🔧</span>
+                            Paket DIY (A & B)
+                        </h3>
+                        <p>Sempurna untuk developer dan entrepreneur yang suka hands-on control:</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                            <li>File source lengkap + dokumentasi detail</li>
+                            <li>Anda yang handle hosting & domain setup</li>
+                            <li>Kebebasan kustomisasi penuh</li>
+                            <li>Ideal untuk pembelajaran dan development</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card success">
+                        <h3 class="info-title">
+                            <span>⚡</span>
+                            Paket Full-Service (C & D)
+                        </h3>
+                        <p>Untuk bisnis yang ingin semuanya dihandle secara profesional:</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.5rem; color: var(--text-secondary);">
+                            <li>Website otomatis go live</li>
+                            <li>Kami handle hosting & domain setup</li>
+                            <li>Manajemen profesional included</li>
+                            <li>Perfect untuk busy entrepreneur</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Modern Package Table -->
+                <div class="packages-wrapper">
+                    <div class="package-table">
+                        <table role="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Fitur</th>
+                                    <th scope="col">Starter DIY<br><small style="opacity: 0.7;">Paket A</small></th>
+                                    <th scope="col">Advanced DIY<br><small style="opacity: 0.7;">Paket B</small></th>
+                                    <th scope="col" class="package-highlight">Pro Service<br><small style="opacity: 0.7;">Paket C</small></th>
+                                    <th scope="col">Enterprise<br><small style="opacity: 0.7;">Paket D</small></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>File Website</strong><br><small>Production-ready HTML, CSS, JS</small></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Akses Source Code</strong><br><small>Hak kustomisasi penuh</small></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Dokumentasi & Panduan</strong><br><small>Instruksi setup lengkap</small></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                    <td><span class="feature-check">✓</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Hosting GitHub Pages</strong><br><small>Web hosting profesional</small></td>
+                                    <td><span class="feature-diy">Anda Urus</span></td>
+                                    <td><span class="feature-diy">Anda Urus</span></td>
+                                    <td><span class="feature-managed">Kami Handle</span></td>
+                                    <td><span class="feature-managed">Kami Handle</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Domain Custom (.com)</strong><br><small>URL bermerek profesional</small></td>
+                                    <td><span class="feature-cross">✗</span></td>
+                                    <td><span class="feature-cross">✗</span></td>
+                                    <td><span class="feature-managed">Termasuk*</span></td>
+                                    <td><span class="feature-managed">Premium*</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Setup Website Lengkap</strong><br><small>Website live siap pakai</small></td>
+                                    <td><span class="feature-cross">✗</span></td>
+                                    <td><span class="feature-cross">✗</span></td>
+                                    <td><span class="feature-cross">✗</span></td>
+                                    <td><span class="feature-managed">Full Setup</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Kustomisasi Minor</strong><br><small>Warna, teks, gambar, branding</small></td>
+                                    <td><span class="feature-cross">✗</span></td>
+                                    <td><span class="feature-cross">✗</span></td>
+                                    <td><span class="feature-cross">✗</span></td>
+                                    <td><span class="feature-managed">3 Revisi</span></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Priority Support</strong><br><small>Akses langsung ke ahli</small></td>
+                                    <td>7 Hari</td>
+                                    <td>14 Hari</td>
+                                    <td><strong>30 Hari</strong></td>
+                                    <td><strong>60 Hari VIP</strong></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Garansi Uang Kembali</strong><br><small>Investasi bebas risiko</small></td>
+                                    <td>3 Hari</td>
+                                    <td>3 Hari</td>
+                                    <td><strong>7 Hari</strong></td>
+                                    <td><strong>7 Hari</strong></td>
+                                </tr>
+                                <tr class="price-row">
+                                    <td><strong>Investasi</strong></td>
+                                    <td><strong>Rp 100K</strong></td>
+                                    <td><strong>Rp 150K</strong></td>
+                                    <td><strong>Rp 250K</strong></td>
+                                    <td><strong>Rp 350K</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Domain Policy -->
+                <div class="info-card primary" style="margin: 2rem 0;">
+                    <h3 class="info-title">
+                        <span>🌐</span>
+                        Kebijakan Domain Explained
+                    </h3>
+                    <p style="margin-bottom: 1rem; color: var(--text-secondary);">
+                        <strong>*Ketersediaan Domain:</strong> Kami akan mengamankan domain terbaik yang tersedia untuk brand Anda. 
+                        Jika domain pilihan sudah diambil, kami akan memberikan alternatif premium yang meningkatkan identitas brand.
+                    </p>
+                    <div style="padding: 1rem; background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); border-radius: 0.5rem; font-size: 0.9rem;">
+                        <strong>Contoh:</strong> Ingin "bisnisku.com" tapi sudah diambil? 
+                        Kami suggest "bisniskuonline.com", "bisniskupro.com", atau alternatif brandable lainnya.
+                    </div>
+                </div>
+
+                <!-- CTA for packages -->
+                <div style="text-align: center; margin-top: 3rem;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">
+                        Tidak Yakin Paket Mana Yang Cocok?
+                    </h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
+                        Dapatkan rekomendasi personal dari ahli kami
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="/#products" class="btn btn-primary">
+                            <span>Lihat Demo Live</span>
+                            <span>👀</span>
+                        </a>
+                        <a href="/kontak.html" class="btn btn-outline" style="background: white; color: var(--text-primary); border: 2px solid var(--border-color);">
+                            <span>Konsultasi Gratis</span>
+                            <span>💬</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-badge">FAQ</div>
+                    <h2 class="section-title">Pertanyaan Yang Sering Diajukan</h2>
+                    <p class="section-description">Semua yang perlu Anda ketahui tentang paket, proses, dan garansi kami.</p>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <span>💰</span>
+                            Apakah ada biaya tersembunyi?
+                        </h3>
+                        <p class="faq-answer">Sama sekali tidak. Pricing kami 100% transparan. Harga yang Anda lihat adalah persis yang Anda bayar—tidak ada biaya surprise, admin, atau tersembunyi.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <span>⚡</span>
+                            Seberapa cepat delivery-nya?
+                        </h3>
+                        <p class="faq-answer">Paket DIY: File dikirim dalam 2-4 jam. Paket full-service: Website Anda go live dalam 24 jam setelah konfirmasi pembayaran.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <span>🔒</span>
+                            Apakah pembayaran saya aman?
+                        </h3>
+                        <p class="faq-answer">100% aman. Semua transaksi menggunakan akun bisnis resmi dengan receipt digital. Informasi finansial Anda dilindungi dengan keamanan level bank.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <span>🛡️</span>
+                            Bagaimana kebijakan refund?
+                        </h3>
+                        <p class="faq-answer">Garansi uang kembali penuh dalam 3-7 hari (tergantung paket) jika produk yang dikirim tidak sesuai deskripsi. Kepuasan Anda terjamin.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <span>🌐</span>
+                            Bagaimana jika domain yang saya inginkan sudah diambil?
+                        </h3>
+                        <p class="faq-answer">Kami akan riset dan suggest alternatif premium yang fit dengan brand Anda. Ahli domain kami akan temukan opsi yang bahkan mungkin lebih baik dari pilihan original.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <span>📱</span>
+                            Apakah website mobile-responsive?
+                        </h3>
+                        <p class="faq-answer">Ya, setiap website fully responsive dan dioptimalkan untuk semua device—mobile, tablet, dan desktop. Standar desain modern terjamin.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <span>🛠️</span>
+                            Bisakah saya request fitur custom?
+                        </h3>
+                        <p class="faq-answer">Paket D termasuk kustomisasi minor. Untuk major custom development, kami tawarkan layanan premium terpisah dengan harga kompetitif.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3 class="faq-question">
+                            <span>💬</span>
+                            Seberapa bagus support Anda?
+                        </h3>
+                        <p class="faq-answer">Support profesional via WhatsApp dengan response time di bawah 2 jam selama jam kerja. Manusia real, solusi real, real fast.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Siap Launch Kesuksesan Anda?</h2>
+                    <p class="cta-description">Bergabung dengan 1000+ klien puas yang pilih kualitas, kecepatan, dan keunggulan. Website sempurna Anda hanya satu klik lagi.</p>
+                    <div class="cta-buttons">
+                        <a href="/#products" class="btn btn-primary">
+                            <span>Browse Template Website</span>
+                            <span>🚀</span>
+                        </a>
+                        <a href="/kontak.html" class="btn btn-outline">
+                            <span>Mulai Konsultasi Gratis</span>
+                            <span>💬</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modern Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vin Nesia Web Market</h3>
+                    <p>Solusi website premium untuk bisnis modern. Dipercaya 1000+ klien di seluruh Indonesia sejak 2024. Kualitas, kecepatan, dan inovasi di setiap project.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Hubungi Kami</h4>
+                    <p>📞 WhatsApp: <a href="https://wa.me/6289535451177">+62 895-3545-11777</a></p>
+                    <p>✉️ Bisnis: <a href="mailto:admin@vinnesia.my.id">admin@vinnesia.my.id</a></p>
+                    <p>🔧 Support: <a href="mailto:support@vinnesia.my.id">support@vinnesia.my.id</a></p>
+                    <p>💼 Partnership: <a href="mailto:partner@vinnesia.my.id">partner@vinnesia.my.id</a></p>
+                    <p>🕒 Available: 08:00 - 22:00 WIB</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Layanan Kami</h4>
+                    <p>🌐 Website Statis Premium</p>
+                    <p>☁️ Solusi Hosting Profesional</p>
+                    <p>🔗 Registrasi Domain Custom</p>
+                    <p>🎨 Desain Identitas Brand</p>
+                    <p>⚡ Optimisasi Performance</p>
+                    <p>🛠️ Custom Development</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <p><a href="/cara-beli.html">📋 Panduan Pembelian</a></p>
+                    <p><a href="/paket.html">📦 Perbandingan Paket</a></p>
+                    <p><a href="#">📚 Knowledge Base</a></p>
+                    <p><a href="#">📜 Syarat Layanan</a></p>
+                    <p><a href="#">🔒 Kebijakan Privasi</a></p>
+                    <p><a href="#">❓ Help Center</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Mengapa Pilih Kami</h4>
+                    <p>✅ Garansi 100% Satisfaction</p>
+                    <p>⚡ Lightning-Fast Delivery</p>
+                    <p>🏆 Standar Kualitas Premium</p>
+                    <p>💬 Tim Support Expert</p>
+                    <p>🛡️ Transaksi Secure</p>
+                    <p>🌟 1000+ Happy Clients</p>
+                </div>
+            </div>
+            
+            <div class="footer-stats">
+                <span>🚀 1000+ Website Delivered</span>
+                <span>⭐ 4.9/5 Client Rating</span>
+                <span>⚡ 2-Hour Response Time</span>
+                <span>🛡️ 100% Success Rate</span>
+                <span>🏆 Industry Leading</span>
+            </div>
+            
+            <div class="footer-bottom">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+                    <p>&copy; 2025 Vin Nesia Web Market. Hak Cipta Dilindungi.</p>
+                    <div>
+                        <span style="margin-right: 1rem;">📜 Licensed & Protected</span>
+                        <a href="#" style="color: #6366f1;">Ketentuan Lisensi</a>
+                    </div>
+                </div>
+                
+                <div style="text-align: center; padding-top: 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+                    <p style="font-size: 1rem; margin-bottom: 0.5rem; font-weight: 600;">
+                        🌟 Kualitas Premium • Harga Transparan • Layanan Exceptional
+                    </p>
+                    <p style="font-size: 0.875rem; color: #94a3b8;">
+                        Crafted with ❤️ in Indonesia | Optimized for Performance, SEO & Accessibility
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Advanced JavaScript -->
+    <script>
+        // Modern JavaScript with performance optimization
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header scroll effect
+            const header = document.getElementById('header');
+            let lastScrollY = window.scrollY;
+            
+            const handleScroll = () => {
+                const currentScrollY = window.scrollY;
+                
+                if (currentScrollY > 100) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                
+                lastScrollY = currentScrollY;
+            };
+            
+            // Throttled scroll listener
+            let ticking = false;
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    requestAnimationFrame(() => {
+                        handleScroll();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            });
+            
+            // Mobile menu functionality
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const nav = document.querySelector('.nav');
+            
+            if (mobileMenuBtn && nav) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', !isExpanded);
+                    
+                    if (!isExpanded) {
+                        nav.style.cssText = `
+                            display: flex;
+                            position: fixed;
+                            top: 100%;
+                            left: 0;
+                            right: 0;
+                            background: white;
+                            flex-direction: column;
+                            padding: 2rem;
+                            box-shadow: var(--shadow-xl);
+                            z-index: 999;
+                        `;
+                    } else {
+                        nav.style.display = 'none';
+                    }
+                });
+                
+                // Close mobile menu on nav link click
+                nav.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        nav.style.display = 'none';
+                        mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        const headerHeight = header.offsetHeight;
+                        const targetPosition = target.offsetTop - headerHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in-up');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements for animation
+            document.querySelectorAll('.benefit-card, .info-card, .faq-item').forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Enhanced accessibility
+            document.querySelectorAll('.benefit-card, .info-card, .faq-item').forEach(card => {
+                card.setAttribute('tabindex', '0');
+                card.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+            
+            // Dynamic title updates for SEO
+            const updateTitle = () => {
+                const scrolled = window.pageYOffset;
+                if (scrolled > 500) {
+                    document.title = "Pilih Paket Anda - Vin Nesia Web Market";
+                } else {
+                    document.title = "Premium Website Packages - Vin Nesia Web Market";
+                }
+            };
+            
+            window.addEventListener('scroll', updateTitle);
+            
+            // Preload critical resources
+            const preloadLink = document.createElement('link');
+            preloadLink.rel = 'preload';
+            preloadLink.as = 'image';
+            preloadLink.href = '/images/hero-bg.webp';
+            document.head.appendChild(preloadLink);
+        });
+        
+        // Service Worker for PWA
+        if ('serviceWorker' in navigator && 'PushManager' in window) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+        
+        // Performance monitoring
+        if ('PerformanceObserver' in window) {
+            const observer = new PerformanceObserver((list) => {
+                for (const entry of list.getEntries()) {
+                    if (entry.entryType === 'largest-contentful-paint') {
+                        console.log('LCP:', entry.startTime);
+                    }
+                }
+            });
+            observer.observe({entryTypes: ['largest-contentful-paint']});
+        }
+    </script>
+
+    <!-- Enhanced Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Vin Nesia Web Market",
+        "url": "https://webmarket.vinnesia.my.id",
+        "logo": "https://webmarket.vinnesia.my.id/logo.png",
+        "description": "Marketplace website statis premium yang menawarkan solusi web profesional dari paket DIY hingga solusi enterprise full-service.",
+        "foundingDate": "2024",
+        "numberOfEmployees": "10-20",
+        "telephone": "+62-895-3545-11777",
+        "email": "admin@vinnesia.my.id",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "ID",
+            "addressLocality": "Jakarta",
+            "addressRegion": "Jakarta"
+        },
+        "sameAs": [
+            "https://facebook.com/vinnesia",
+            "https://instagram.com/vinnesia",
+            "https://twitter.com/vinnesia",
+            "https://linkedin.com/company/vinnesia"
+        ],
+        "serviceArea": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "priceRange": "Rp100,000 - Rp350,000",
+        "paymentAccepted": ["Bank Transfer", "E-Wallet", "Credit Card"],
+        "currenciesAccepted": "IDR",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Paket Website",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Starter DIY Package",
+                        "description": "File website basic dengan akses source code"
+                    },
+                    "price": "100000",
+                    "priceCurrency": "IDR",
+                    "availability": "https://schema.org/InStock",
+                    "validFrom": "2024-01-01"
+                },
+                {
+                    "@type": "Offer", 
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Advanced DIY Package",
+                        "description": "File website dengan panduan hosting dan support extended"
+                    },
+                    "price": "150000",
+                    "priceCurrency": "IDR",
+                    "availability": "https://schema.org/InStock",
+                    "validFrom": "2024-01-01"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service", 
+                        "name": "Pro Service Package",
+                        "description": "Website full-service dengan hosting dan manajemen domain"
+                    },
+                    "price": "250000",
+                    "priceCurrency": "IDR",
+                    "availability": "https://schema.org/InStock",
+                    "validFrom": "2024-01-01"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Enterprise Package", 
+                        "description": "Premium full-service dengan kustomisasi dan VIP support"
+                    },
+                    "price": "350000",
+                    "priceCurrency": "IDR",
+                    "availability": "https://schema.org/InStock", 
+                    "validFrom": "2024-01-01"
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "1000+",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "openingHours": "Mo-Su 08:00-22:00",
+        "areaServed": "Indonesia"
+    }
+    </script>
+</body>
+</html>
