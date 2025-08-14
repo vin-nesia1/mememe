@@ -1309,4 +1309,88 @@ body {
         padding: 10px 20px;
         font-size: 14px;
     }
+    /* Comparison Table - Professional Style */
+.comparison-section {
+    padding: 4rem 0;
+    background: #f8fafc;
+}
+
+.comparison-section .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.comparison-table {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.05);
+    background: white;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1.2rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.95rem;
+}
+
+.comparison-table th {
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.comparison-table th small {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: normal;
+    opacity: 0.8;
+}
+
+.comparison-table tbody tr:hover {
+    background: #f1f5f9;
+    transition: background 0.3s;
+}
+
+.comparison-table td:first-child {
+    text-align: left;
+    font-weight: 500;
+    color: #1e293b;
+}
+
+.comparison-table td small {
+    display: block;
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 0.2rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .comparison-section .section-title {
+        font-size: 1.8rem;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .comparison-table th small,
+    .comparison-table td small {
+        font-size: 0.75rem;
+    }
 }
